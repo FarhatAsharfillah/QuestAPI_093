@@ -1,6 +1,6 @@
 package com.example.questapi_093.apiservice
 
-import com.example.localrestapi.modedata.DataSiswa
+import com.example.questapi_093.modeldata.DataSiswa
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
