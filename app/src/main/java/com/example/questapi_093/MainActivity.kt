@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.questapi_093.ui.theme.QuestAPI_093Theme
+import com.example.questapi_093.uicontroller.DataSiswaApp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,9 +20,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             QuestAPI_093Theme {
-                Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    DataSiswaApp(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
