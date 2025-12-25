@@ -1,4 +1,4 @@
-package com.example.questapi_093_093.view
+package com.example.questapi_093.view
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Arrangement

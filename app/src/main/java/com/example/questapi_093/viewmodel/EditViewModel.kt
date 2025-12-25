@@ -1,4 +1,4 @@
-package com.example.questapi_093_093.viewmodel
+package com.example.questapi_093.viewmodel
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
