@@ -1,4 +1,19 @@
-package com.example.questapi_093.viewmodel
+package com.example.questapi_093_093.viewmodel
+
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+import androidx.lifecycle.SavedStateHandle
+import com.example.questapi_093.modeldata.DetailSiswa
+import com.example.questapi_093.modeldata.UIStateSiswa
+import com.example.questapi_093.modeldata.toUiStateSiswa
+import com.example.questapi_093.repositori.RepositoryDataSiswa
+import retrofit2.Response
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.questapi_093.modeldata.toDataSiswa
+import com.example.questapi_093.uicontroller.route.DestinasiDetail
+import kotlinx.coroutines.launch
 
 class EditViewModel(savedStateHandle: SavedStateHandle, private val repositoryDataSiswa: RepositoryDataSiswa): ViewModel(){
     var uiStateSiswa by mutableStateOf(UIStateSiswa())
